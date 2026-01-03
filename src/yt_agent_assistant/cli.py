@@ -4,7 +4,6 @@ from pathlib import Path
 from typing import List, Optional
 
 import typer
-from rich import print
 from rich.console import Console
 from rich.table import Table
 
