@@ -1,0 +1,70 @@
+core:
+  fps: 30
+  final_duration_tc: "3:33:32:20"
+  trim_first_audio_seconds: 3.2
+
+paths:
+  base_dir: "./runtime"
+  image_dir: "./runtime/images"
+  output_dir: "./runtime/outputs"
+  track_root: "./runtime"
+  log_dir: "./runtime/logs"
+  incoming_image_dir: "./runtime/incoming"
+  imported_archive_dir: "./runtime/incoming/_processed"
+  yt_thumb_dir: "./runtime/yt_thumbs"
+  trimmed_dir: "./runtime/audio/psalms"
+  gospel_root: "./runtime/audio/gospels"
+  silence_stub_path: "./runtime/audio/silence_stub.wav"
+  tmp_stills_dir: "./runtime/tmp_stills"
+
+images:
+  auto_import_images: true
+  auto_import_image_exts: [".png", ".jpg", ".jpeg", ".webp"]
+  yt_thumb_max_bytes: 2000000
+  yt_thumb_suffix: "_yt"
+  yt_thumb_target_bytes: 1800000
+
+audio:
+  include_gospel: true
+  random_seed: null
+  max_head_items: 2
+  preferred_head: [1, 23, "Marc 4"]
+  auto_trigger_resolve: true
+
+openai:
+  model: "gpt-4.1"
+  title_examples_input: |
+    Be still and pray; Jesus is near / Real Jesus Teachings [Jerusalem, AD 33] /
+    Be still; He reaches for you / Be still; He leads you beside quiet waters /
+    Come and breathe; His peace blooms here / Rest easy-He is near /
+    Listen to Jesus Preaching [Jerusalem, AD 33] / Quiet rest by the fire; Jesus keeps watch
+  devotional_examples_input: |
+    The Lord is my refuge / God, I am letting go; take control of my life /
+    My child, do not worry; I will help you / Spend time with God and find peace /
+    Quiet your heart and rest in God's love / Lord, order my steps; without You I am lost
+  default_guide_hint: null
+
+resolve:
+  render_dir: "./runtime/renders"
+  render_format: "mp4"
+  render_codec: "H264"
+  timeline_prefix: "timeline"
+  width: 1920
+  height: 1080
+  use_still_duration_in_resolve: true
+  do_render_all_timelines: true
+  auto_caption_lang: "ENGLISH"
+  auto_caption_preset: "DEFAULT"
+  chars_per_line: 42
+  double_line: true
+  caption_gap_frames: 0
+  h264_profile: "High"
+  hw_encode_if_available: true
+  subtitles_burn_in: true
+  pad_short_audio_with_silence: false
+  silence_chunk_seconds: 5.0
+
+flask:
+  debug: true
+  secret_key: "change-me"
+  reset_on_start: true

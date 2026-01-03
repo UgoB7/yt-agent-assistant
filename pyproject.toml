@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yt-agent-assistant"
+version = "0.1.0"
+description = "Agent/assistant to generate YouTube-ready titles, playlists, assets, and Resolve timelines."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+authors = [{ name = "Ugo Bellanca" }]
+dependencies = [
+  "typer>=0.12",
+  "pyyaml>=6.0",
+  "pillow>=10.0",
+  "openai>=1.35",
+  "rich>=13.7",
+  "flask>=3.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "ruff>=0.5"]
+
+[project.scripts]
+ytagent = "yt_agent_assistant.cli:app"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+"yt_agent_assistant" = ["py.typed"]
+
+[tool.ruff]
+line-length = 100
