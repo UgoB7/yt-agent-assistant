@@ -46,8 +46,8 @@ openai:
 
 resolve:
   render_dir: "./runtime/renders"
-  render_format: "mp4"
-  render_codec: "H264"
+  render_format: "QuickTime"
+  render_codec: "H265"
   timeline_prefix: "timeline"
   width: 1920
   height: 1080
