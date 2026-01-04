@@ -17,7 +17,7 @@ from yt_agent_assistant.web_app import create_app  # noqa: E402
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Run the yt-vibes Flask UI.")
+    parser = argparse.ArgumentParser(description="Run the yt assistant Flask UI.")
     parser.add_argument("--config", type=Path, help="Path to settings.yaml.")
     parser.add_argument("--host", default="0.0.0.0", help="Host to bind.")
     parser.add_argument("--port", type=int, default=5050, help="Port to bind.")

@@ -103,8 +103,8 @@ class ResolveSettings:
     double_line: bool = True
     caption_gap_frames: int = 0
     render_dir: Path = field(default_factory=lambda: Path("./runtime/renders"))
-    render_format: str = "mp4"
-    render_codec: str = "H264"
+    render_format: str = "QuickTime"
+    render_codec: str = "H265"
     h264_profile: str = "High"
     hw_encode_if_available: bool = True
     subtitles_burn_in: bool = True
