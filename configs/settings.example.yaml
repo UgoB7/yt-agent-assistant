@@ -34,14 +34,17 @@ audio:
 openai:
   model: "gpt-4.1"
   title_examples_input: |
-    Be still and pray; Jesus is near / Real Jesus Teachings [Jerusalem, AD 33] /
-    Be still; He reaches for you / Be still; He leads you beside quiet waters /
-    Come and breathe; His peace blooms here / Rest easy-He is near /
-    Listen to Jesus Preaching [Jerusalem, AD 33] / Quiet rest by the fire; Jesus keeps watch
+    You're tired, I know... Rest by the Fire with Jesus. /
+    Tonight, let your heart rest... Jesus keeps watch. /
+    Rest, You're Safe Here... Jesus Is With You. /
+    Come, Traveler... Find Rest With Jesus. /
+    My Child, I Know You're Safe With Me.
   devotional_examples_input: |
-    The Lord is my refuge / God, I am letting go; take control of my life /
-    My child, do not worry; I will help you / Spend time with God and find peace /
-    Quiet your heart and rest in God's love / Lord, order my steps; without You I am lost
+    You're tired, I know... Rest by the Fire with Jesus. /
+    Tonight, let your heart rest... Jesus keeps watch. /
+    Rest, You're Safe Here... Jesus Is With You. /
+    Come, Traveler... Find Rest With Jesus. /
+    My Child, I Know You're Safe With Me.
   default_guide_hint: null
 
 resolve:
